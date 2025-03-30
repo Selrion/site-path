@@ -40,7 +40,7 @@ services:
     volumes:
       - /home/selrion/hackaton-files:/var/www/html
       - ./nginx-conf:/etc/nginx/conf.d
-      - /etc/letsencrypt/live/pathtowin.ru/:/etc/letsencrypt/live/pathtowin.ru/
+      - /etc/letsencrypt/archive/pathtowin.ru/:/etc/letsencrypt/live/pathtowin.ru/
       - ./nginx_logs/:/var/log/nginx/
     networks:
       - app-network
